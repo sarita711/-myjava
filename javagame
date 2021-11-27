@@ -1,0 +1,55 @@
+package com.company;
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code
+//HERE we  are creating a mini project
+        Scanner sc= new Scanner(System.in);
+        int username;
+        int myNumber=(int) (Math.random()*100);
+        do{
+
+            System.out.println("guess the number:(1-100)");
+
+            username=sc.nextInt();
+            if(username==myNumber)
+            {
+                System.out.println(" wow ur number is correct ");
+break;
+
+            }
+            else if(username>myNumber)
+            {
+
+                System.out.println("ur number is too large!! good luck....keep it up");
+
+
+            }
+            else
+            {
+
+                System.out.println(" ur number is too small !! good luck ......");
+
+
+
+            }
+
+
+
+        }
+        while (username>=0);
+
+
+        System.out.println("my number was ....=");
+        System.out.println(myNumber);
+
+
+            
+    }
+
+
+}
